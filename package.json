@@ -1,0 +1,46 @@
+{
+  "name": "fettle-phoenix-gym",
+  "version": "1.0.0",
+  "description": "A front-end website for a local gym in my neighborhood.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "tailwind:init": "tailwindcss init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kunalkc/Fettle-Phoenix-Gym.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kunalkc/Fettle-Phoenix-Gym/issues"
+  },
+  "homepage": "https://github.com/Kunalkc/Fettle-Phoenix-Gym#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@tailwindcss/postcss": "^4.0.14",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.1.5",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.0.14",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
