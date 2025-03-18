@@ -19,24 +19,29 @@ function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "w-full"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-    className: "fixed w-full top-0 left-0 bg-black flex flex-row justify-between items-center"
+    className: "fixed w-full top-0 left-0 bg-transparent flex flex-row justify-between items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "px-2",
+    className: "pl-10 pt-3",
     src: "/img/logo.png",
-    width: 50,
-    height: 50
+    width: 150,
+    height: 150
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "px-2 flex flex-row flex-nowrap gap-[1vw] text-white"
+    className: "pr-10 flex flex-row flex-nowrap gap-[1vw] text-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "hover:bg-amber-300",
+    className: "hover:underline",
     href: ""
   }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "hover:underline",
     href: ""
   }, "Gyms")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "hover:underline",
     href: ""
   }, "Membership")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "hover:underline",
     href: ""
-  }, "Contact"))))));
+  }, "Contact"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: " w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center"
+  })));
 }
 
 /***/ }),

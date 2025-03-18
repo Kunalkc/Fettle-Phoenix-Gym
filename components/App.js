@@ -3,18 +3,24 @@ import React from "react";
 export default function App(){
     return(
         <div className="w-full">
-            <header className="fixed w-full top-0 left-0 bg-black flex flex-row justify-between items-center">
-                    <img className="px-2" src="/img/logo.png" width={50} height={50}></img>
+            <header className="fixed w-full top-0 left-0 bg-transparent flex flex-row justify-between items-center">
+                    <img className="pl-10 pt-3" src="/img/logo.png" width={150} height={150}></img>
 
                     <nav>
-                        <ul className="px-2 flex flex-row flex-nowrap gap-[1vw] text-white">
-                            <li><a className="hover:bg-amber-300" href="">About</a></li>
-                            <li><a href="">Gyms</a></li>
-                            <li><a href="">Membership</a></li>
-                            <li><a href="">Contact</a></li>
+                        <ul className="pr-10 flex flex-row flex-nowrap gap-[1vw] text-white">
+                            <li><a className="hover:underline" href="">About</a></li>
+                            <li><a className="hover:underline" href="">Gyms</a></li>
+                            <li><a className="hover:underline" href="">Membership</a></li>
+                            <li><a className="hover:underline" href="">Contact</a></li>
                         </ul>
                     </nav>
             </header>
+            <main>
+                <div className=" w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center">
+           
+                
+                </div>
+            </main>
         </div>
     )
 }
