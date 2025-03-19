@@ -42,5 +42,5 @@ html{
 }
 
 .fade-in-static {
-  animation: fadeInFromBelow1 0.7s ease-out forwards;
+  animation: fadeInFromBelow1 1.3s ease-out forwards;
 }

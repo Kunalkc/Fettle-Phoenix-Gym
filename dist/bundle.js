@@ -2,6 +2,38 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./components/About.js":
+/*!*****************************!*\
+  !*** ./components/About.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ About)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Imageslider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Imageslider */ "./components/Imageslider.js");
+
+
+function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "ABOUT",
+    className: " w-full h-screen flex flex-col gap-[4vw] items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "my-15 text-red-700 text-2xl font-bold italic fade-in"
+  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "text-white text-center w-[70vw] fade-in"
+  }, "Fettle Phoenix Gym in Sundernagar, owned by pro bodybuilder Nirit, is a premier fitness hub designed for those who are serious about strength, endurance, and transformation. Equipped with cutting-edge machines, free weights, and specialized training zones, the gym offers a dynamic space for beginners and professionals alike. With Nirits expertise and personalized coaching, members receive top-tier guidance to achieve peak performance, whether it\u2019s muscle building, fat loss, or overall fitness. At Fettle Phoenix Gym, every workout is a step toward redefining strength and resilience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Imageslider__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ID: 1,
+    width: 70,
+    height: 60
+  }));
+}
+
+/***/ }),
+
 /***/ "./components/App.js":
 /*!***************************!*\
   !*** ./components/App.js ***!
@@ -15,6 +47,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Landing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Landing */ "./components/Landing.js");
+/* harmony import */ var _Gyms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Gyms */ "./components/Gyms.js");
+/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./About */ "./components/About.js");
+
+
+
 
 
 function App() {
@@ -22,29 +60,61 @@ function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "w-full",
     ref: mainRef
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: " relative w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "absolute bottom-100 right-50 text-red-700 text-5xl font-bold italic drop-shadow-md fade-in-static"
-  }, "FETTLE PHOENIX GYM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent to-[rgb(31,27,27)]"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "ABOUT",
-    className: " w-full h-screen flex flex-col gap-[4vw] items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "my-15 text-red-700 text-2xl font-bold italic fade-in"
-  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "text-white text-center w-[70vw] fade-in"
-  }, "Fettle Phoenix Gym in Sundernagar, owned by pro bodybuilder Nirit, is a premier fitness hub designed for those who are serious about strength, endurance, and transformation. Equipped with cutting-edge machines, free weights, and specialized training zones, the gym offers a dynamic space for beginners and professionals alike. With Nirits expertise and personalized coaching, members receive top-tier guidance to achieve peak performance, whether it\u2019s muscle building, fat loss, or overall fitness. At Fettle Phoenix Gym, every workout is a step toward redefining strength and resilience.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "GYMS",
-    className: " w-full h-screen"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Landing__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_About__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Gyms__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "MEM",
     className: " w-full h-screen"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "CONTACT",
-    className: " w-full h-screen"
-  })));
+    className: "w-full h-[50vh] bg-black flex flex-row gap-3.5 items-center justify-around"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col gap-1 items-center justify-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-red-500 italic text-center"
+  }, "Fettle Phoenix Gym 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("address", {
+    className: "text-white"
+  }, "Pungh, near Amit Emporium, Sundar Nagar,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Mandi, Himachal Pradesh", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " 175018"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "self-start",
+    href: "https://maps.app.goo.gl/rbDCkWGKr8FbvwDw6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "./img/googlemaps.png",
+    width: 30,
+    height: 30
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col gap-1 items-center justify-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-red-500 italic text-center"
+  }, "Fettle Phoenix Gym 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("address", {
+    className: "text-white"
+  }, "Near Dental collage, Sundernagar, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Mandi,Himachal Pradesh", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " 175018"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "self-start",
+    href: "https://maps.app.goo.gl/rbDCkWGKr8FbvwDw6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "./img/googlemaps.png",
+    width: 30,
+    height: 30
+  }))))));
+}
+
+/***/ }),
+
+/***/ "./components/Gyms.js":
+/*!****************************!*\
+  !*** ./components/Gyms.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ About)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "GYMS",
+    className: " w-full h-screen "
+  });
 }
 
 /***/ }),
@@ -119,6 +189,128 @@ function header() {
     height: 30
   })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
 }
+
+/***/ }),
+
+/***/ "./components/Imageslider.js":
+/*!***********************************!*\
+  !*** ./components/Imageslider.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ slider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images */ "./components/images.js");
+
+
+function slider(props) {
+  var imgarr = [];
+  for (var i = 0; i < _images__WEBPACK_IMPORTED_MODULE_1__["default"].length; i++) {
+    if (props.ID === _images__WEBPACK_IMPORTED_MODULE_1__["default"][i].ID) {
+      imgarr = _images__WEBPACK_IMPORTED_MODULE_1__["default"][i];
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./components/Landing.js":
+/*!*******************************!*\
+  !*** ./components/Landing.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Landing)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Landing() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: " relative w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute bottom-65 right-50 flex flex-col gap-1.5 items-center justify-center fade-in-static"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "pl-10 pt-3",
+    src: "/img/gymlogo.png",
+    width: 200,
+    height: 180
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: " text-red-700 text-5xl font-bold italic drop-shadow-md "
+  }, "FETTLE PHOENIX GYM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "pl-10 pt-3",
+    src: "/img/barbel.png",
+    width: 200,
+    height: 180
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent to-[rgb(31,27,27)]"
+  }));
+}
+
+/***/ }),
+
+/***/ "./components/images.js":
+/*!******************************!*\
+  !*** ./components/images.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
+  ID: 1,
+  img: [{
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }]
+}, {
+  ID: 1,
+  img: [{
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }]
+}, {
+  ID: 1,
+  img: [{
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }, {
+    url: "",
+    tiledesc: ""
+  }]
+}]);
 
 /***/ }),
 
