@@ -12,3 +12,35 @@ html{
 .hero{
     color: red;
 }
+
+@keyframes fadeInFromBelow {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.fade-in {
+    animation: fadeInFromBelow  ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+  }
+
+@keyframes fadeInFromBelow1 {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-static {
+  animation: fadeInFromBelow1 0.7s ease-out forwards;
+}
