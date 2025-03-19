@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+:root{
+    --BGCOLOR: #1f1b1b;
+}
+
+html{
+    background-color: var(--BGCOLOR);
+    scroll-behavior: smooth;
+}
+
 .hero{
     color: red;
 }
