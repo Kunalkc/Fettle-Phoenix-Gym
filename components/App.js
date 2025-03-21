@@ -29,42 +29,42 @@ export default function App(){
                 <div id="MEM" className=" w-full h-screen flex flex-col items-center justify-center gap-5 fade-in">
            
                    <h1 className="mt-15 text-red-700 text-2xl font-bold italic fade-in">MEMBERSHIPS</h1>
-                <table className="table-fixed w-2/3 bg-black p-10 rounded-lg h-2/3">
-                     <thead className="bg-[rgb(31, 27, 27)]">
-                       <tr>
+                <table className="table-fixed w-5/6 bg-black p-10 rounded-lg h-2/3 shadow-md shadow-red-500 overflow-hidden ">
+                     <thead >
+                       <tr className="bg-gray-900 rounded-lg border-b-1 border-red-600">
                         <th></th>
-                         <th className="text-center text-white">BOYS</th>
-                         <th className="text-center text-white">GIRLS</th>
-                         <th className="text-center text-white">COUPLE</th>
+                         <th className="text-center text-white py-5">BOYS</th>
+                         <th className="text-center text-white py-5">GIRLS</th>
+                         <th className="text-center text-white py-5">COUPLE</th>
                        </tr>
                      </thead>
                      <tbody>
                        <tr>
-                        <th className="text-center text-white">Registration</th>
+                        <th className="text-center text-white border-r-1 border-red-600">Registration</th>
                          <td className="text-center text-white">200</td>
                          <td className="text-center text-white">100</td>
                          <td className="text-center text-white">200</td>
                        </tr>
                        <tr>
-                       <th className="text-center text-white">Monthy</th>
+                       <th className="text-center text-white border-r-1 border-red-600">Monthy</th>
                          <td className="text-center text-white">1000</td>
                          <td className="text-center text-white">1000</td>
                          <td className="text-center text-white">1800</td>
                        </tr>
                        <tr>
-                       <th className="text-center text-white">3 Months</th>
+                       <th className="text-center text-white border-r-1 border-red-600">3 Months</th>
                           <td className="text-center text-white">2700</td>
                          <td className="text-center text-white">2700</td>
                          <td className="text-center text-white">4800</td>
                        </tr>
                        <tr>
-                       <th className="text-center text-white">6 Months</th>
+                       <th className="text-center text-white border-r-1 border-red-600">6 Months</th>
                           <td className="text-center text-white">2700</td>
                          <td className="text-center text-white"> 2700</td>
                          <td className="text-center text-white">4800</td>
                        </tr>
                        <tr>
-                       <th className="text-center text-white">1 Year</th>
+                       <th className="text-center text-white border-r-1 border-red-600">1 Year</th>
                           <td className="text-center text-white">7200</td>
                          <td className="text-center text-white">7200</td>
                          <td className="text-center text-white">14000</td>

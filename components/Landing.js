@@ -5,9 +5,9 @@ export default function Landing(){
     return(
     <div className=" relative w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center bg-no-repeat">
 
-        <div className="absolute bottom-65 right-50 flex flex-col gap-1.5 items-center justify-center fade-in-static">        
+        <div className="absolute bottom-40 right-30 md:bottom-55 md:right-35 flex flex-col gap-1.5 items-center justify-center fade-in-static">        
         <img className="pl-10 pt-3" src="/img/gymlogo.png" width={200} height={180}></img>        
-        <h1 className=" text-red-700 text-5xl font-bold italic drop-shadow-md ">FETTLE PHOENIX GYM</h1>
+        <h1 className=" text-red-700  text-2xl md:text-5xl font-bold italic drop-shadow-md ">FETTLE PHOENIX GYM</h1>
         <img className="pl-10 pt-3" src="/img/barbel.png" width={200} height={180}></img>
         </div>
 

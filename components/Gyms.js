@@ -5,7 +5,9 @@ export default function gyms(props){
     return(
         <div id="GYMS" className=" w-full h-auto flex flex-col justify-center items-center gap-10 fade-in">
                  
-            <nav className="bg-black mt-25 px-3 w-[170px] h-[40px] flex flex-row items-center justify-around rounded-xl gap-3">
+
+             <h1 className="mt-25 text-red-700 text-2xl font-bold italic fade-in">GYMS</h1>    
+            <nav className="bg-black  px-3 w-[170px] h-[40px] flex flex-row items-center justify-around rounded-xl gap-3">
                     <p onClick={()=>props.changegym(0)} className={` text-nowrap font-bold ${props.opengym ? "text-white" : "text-red-500 "}`}>
                         GYM 1.0 
                     </p>
