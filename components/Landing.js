@@ -3,7 +3,7 @@ import React from "react";
 export default function Landing(){
 
     return(
-    <div className=" relative w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center">
+    <div className=" relative w-full h-screen bg-[url(/img/cover.png)] object-cover bg-center bg-no-repeat">
 
         <div className="absolute bottom-65 right-50 flex flex-col gap-1.5 items-center justify-center fade-in-static">        
         <img className="pl-10 pt-3" src="/img/gymlogo.png" width={200} height={180}></img>        

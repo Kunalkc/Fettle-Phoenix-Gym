@@ -11,6 +11,7 @@ export default function slider(props){
 
     const [currentimgno , setCurrentimgno] = React.useState(1)
     let currimgurl = imgarr.img[currentimgno-1].url
+    let currdesc = imgarr.img[currentimgno-1].tiledesc
 
     const imgselector = imgarr.img.map((item)=>{
         return(
@@ -27,16 +28,17 @@ export default function slider(props){
     React.useEffect(()=>{
        
         currimgurl = imgarr.img[currentimgno-1].url
+        currdesc = imgarr.img[currentimgno-1].tiledesc
 
     },[currentimgno])
     
     console.log(currimgurl)
     return (
-        <div style={{ width: props.width, height: props.height }} className="relative shadow-md shadow-red-500 overflow-hidden flex flex-row justify-center items-end" >
+        <div style={{ width: props.width, height: props.height }} className="relative shadow-md shadow-red-500  flex flex-row justify-center items-end rounded-lg" >
  
-         <img src={currimgurl} className="absolute top-0 left-0 w-full h-full object-cover"/>
-
-        <div className="   w-auto h-[10%] rounded-lg bg-black flex flex-row justify-around items-center z-10">
+         <img src={currimgurl} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover"/>
+         <p className="absolute left-[35%] -bottom-[10%] text-red-500 text-3xl" >{currdesc}</p>
+        <div className="w-auto h-[10%] rounded-lg bg-black flex flex-row justify-around items-center z-10">
          {imgselector}
         </div>
 
