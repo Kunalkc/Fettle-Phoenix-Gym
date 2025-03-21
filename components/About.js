@@ -10,8 +10,8 @@ export default function About(){
                 
          <Imageslider
             ID = {1}
-            width = {70}
-            height = {60}
+            width = {500}
+            height = {300}
          />
         </div> 
     )
