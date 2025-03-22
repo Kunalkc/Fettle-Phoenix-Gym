@@ -2,6 +2,20 @@ import React from "react";
 import Imageslider from "./Imageslider"
 
 export default function gyms(props){
+
+    const [width1 , setWidth1] = React.useState(window.innerWidth * 0.8)
+  
+       
+        React.useEffect(() => {
+            const handleResize = () => {
+                setWidth1(window.innerWidth * 0.7)
+           
+            };
+    
+            window.addEventListener("resize", handleResize);
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+
     return(
         <div id="GYMS" className=" w-full h-auto flex flex-col justify-center items-center gap-10 fade-in">
                  
@@ -21,20 +35,20 @@ export default function gyms(props){
                 {props.opengym ? 
                 <Imageslider
                 ID = {1}
-                width = {1000}
+                width = {width1}
                 height = {300}
              />
                 : <Imageslider
                              ID = {1}
-                             width = {1000}
+                             width = {width1}
                              height = {300}
                 />}
 
                 {
-                    props.opengym ? <div className="  w-3xl  h-auto ">
+                    props.opengym ? <div style={{ width: `${width1}px` }} className="h-auto ">
                         <h1 className="text-red-500 italic font-bold text-center">FETTLE PHOENIX GYM 2.0</h1>
                         <p className="text-white text-center p-5">Fettle Phoenix Gym 2 marks the next chapter in our commitment to premium fitness, bringing top-tier equipment, expert trainers, and a high-energy atmosphere to a brand-new location. Designed to elevate your workouts, this facility offers expanded training zones, innovative programs, and a supportive community to help you achieve your fitness goals. Whether you're a beginner or a seasoned athlete, Fettle Phoenix Gym 2 provides the perfect space to push your limits and redefine your strength.</p>
-                    </div> : <div className="  w-3xl  h-auto ">
+                    </div> : <div style={{ width: `${width1}px` }} className="  w-auto  h-auto ">
                         <h1 className="text-red-500 italic font-bold text-center">FETTLE PHOENIX GYM 1.0</h1>
                         <p className="text-white text-center p-5">Fettle Phoenix Gym set the foundation for a new era of fitness, combining cutting-edge equipment, expert coaching, and a motivating community. As our first branch, it became a hub for fitness enthusiasts seeking personalized training, dynamic workout programs, and a results-driven approach. With a strong reputation for excellence, it continues to inspire members to push their limits and achieve their goals, paving the way for the expansion of the Fettle Phoenix legacy.</p>
                     </div> 
