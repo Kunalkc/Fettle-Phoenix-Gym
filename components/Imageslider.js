@@ -25,6 +25,34 @@ export default function slider(props){
         setCurrentimgno(number)
     }
 
+    function buttonpress(number){
+        if(number){
+    // Right button
+            setCurrentimgno((prevState)=>{
+                if(prevState < imgarr.img.length){
+                    console.log(prevState + 1)
+                    return prevState + 1
+                }
+                else{
+                    console.log(1)
+                    return 1
+                }
+            })
+        }else{
+    // Left button
+                setCurrentimgno((prevState)=>{
+                    if(prevState > 1){
+                        console.log(prevState - 1)
+                       return prevState - 1
+                    }
+                    else{
+                       console.log(imgarr.img.length)
+                       return imgarr.img.length
+                   }
+                  })
+        }
+    }
+
     React.useEffect(()=>{
        
         currimgurl = imgarr.img[currentimgno-1].url
@@ -35,9 +63,11 @@ export default function slider(props){
     console.log(currimgurl)
     return (
         <div style={{ width: props.width, height: props.height }} className="relative shadow-md shadow-red-500  flex flex-row justify-center items-end rounded-lg" >
- 
+        
+        <button onClick={()=>buttonpress(0)}><img src="./img/leftarrow.png" alt="left arrow" width={20} height={20} className="absolute left-0 top-1/2 z-10 hover:scale-125"/></button>
+        <button onClick={()=>buttonpress(1)}><img src="./img/rightarrow.png" alt="right arrow" width={20} height={20} className="absolute right-0 top-1/2 z-10 hover:scale-125"/></button>
          <img src={currimgurl} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover"/>
-         <p className="absolute left-[35%] -bottom-[10%] text-red-500 text-3xl" >{currdesc}</p>
+         <p className="absolute p-2 left-[30%] bottom-[40%] text-white text-3xl md:text-5xl bg-black/50  rounded-lg" >{currdesc}</p>
         <div className="w-auto h-[10%] rounded-lg bg-black flex flex-row justify-around items-center z-10">
          {imgselector}
         </div>
