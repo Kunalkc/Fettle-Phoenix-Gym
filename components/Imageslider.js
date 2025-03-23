@@ -15,7 +15,7 @@ export default function slider(props){
 
     const imgselector = imgarr.img.map((item)=>{
         return(
-            <div onClick={()=>selectimg(item.ID)} className={`w-[10px] h-[10px] mx-4 rounded-xl ${currentimgno === item.ID ? "bg-red-500" : "bg-white"}`}>
+            <div onClick={()=>selectimg(item.ID)} className={`w-[10px] h-[10px] cursor-pointer mx-4 rounded-xl ${currentimgno === item.ID ? "bg-red-500" : "bg-white"}`}>
             </div>
         )
     })
@@ -66,8 +66,8 @@ export default function slider(props){
         
       
 
-        <button onClick={()=>buttonpress(0)}><img src="./img/leftarrow.png" alt="left arrow" width={20} height={20} className="absolute left-0 top-1/2 z-10 hover:scale-125"/></button>
-        <button onClick={()=>buttonpress(1)}><img src="./img/rightarrow.png" alt="right arrow" width={20} height={20} className="absolute right-0 top-1/2 z-10 hover:scale-125"/></button>
+        <button onClick={()=>buttonpress(0)}><img src="./img/leftarrow.png" alt="left arrow" width={20} height={20} className="absolute cursor-pointer left-0 top-1/2 z-10 hover:scale-125"/></button>
+        <button onClick={()=>buttonpress(1)}><img src="./img/rightarrow.png" alt="right arrow" width={20} height={20} className="absolute cursor-pointer right-0 top-1/2 z-10 hover:scale-125"/></button>
          <img src={currimgurl} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover"/>
         
         <div className="absolute top-0 left-0 w-full h-full rounded-lg overflow-hidden flex flex-row justify-center items-center">
