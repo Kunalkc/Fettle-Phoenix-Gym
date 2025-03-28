@@ -4,12 +4,12 @@ import Imageslider from "./Imageslider"
 export default function About(){
 
     const [width1 , setWidth1] = React.useState(window.innerWidth * 0.7)
-    const [width2 , setWidth2] = React.useState(window.innerWidth * 0.6)
+    const [width2 , setWidth2] = React.useState(window.innerWidth * 0.7)
    
     React.useEffect(() => {
         const handleResize = () => {
             setWidth1(window.innerWidth * 0.7)
-            setWidth2(window.innerWidth * 0.6)
+            setWidth2(window.innerWidth * 0.7)
         };
 
         window.addEventListener("resize", handleResize);

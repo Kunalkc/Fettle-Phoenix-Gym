@@ -8,7 +8,7 @@ export default function gyms(props){
        
         React.useEffect(() => {
             const handleResize = () => {
-                setWidth1(window.innerWidth * 0.7)
+                setWidth1(window.innerWidth * 0.8)
            
             };
     
