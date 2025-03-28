@@ -125,17 +125,17 @@ export default [
         img:[
             {
                 ID: 1,
-                url: "./img/sliderimg/SUPPLIMENTS/SUPP1.jpeg",
+                url: "./img/sliderimg/SUPPLIMENTS/supp1.jpeg",
                 tiledesc: "Trusted Suppliments"
             }, 
             {
                 ID: 2,
-                url: "./img/sliderimg/SUPPLIMENTS/SUPP2.jpeg",
+                url: "./img/sliderimg/SUPPLIMENTS/supp2.jpeg",
                 tiledesc: "Best Price"
             },
             {
                 ID: 3,
-                url: "./img/sliderimg/SUPPLIMENTS/SUPP3.jpeg",
+                url: "./img/sliderimg/SUPPLIMENTS/supp3.jpeg",
                 tiledesc: "Max Gains"
             }
         ]

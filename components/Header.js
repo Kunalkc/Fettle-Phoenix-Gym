@@ -25,7 +25,7 @@ export default function header(){
 
     return(
         <header className={`z-1000 fixed w-full h-15 md:h-auto top-0 left-0 flex flex-row justify-center md:justify-between items-center rounded-b-md transition duration-300 ${barcolor ? "bg-[#1f1b1b]" : "bg-transparent"}`}>
-           <img className="hidden md:block pl-0 md:pl-10 pt-3" src="/img/logo.png" width={150} height={150}></img>
+           <img className="hidden md:block pl-0 md:pl-10 pt-3" src="./img/logo.png" width={150} height={150}></img>
 
            <nav>
               <ul className=" pr-0 md:pr-20 flex flex-row flex-nowrap gap-[5vw] md:gap-[2vw] text-white text-md md:text-lg italic">
@@ -36,7 +36,7 @@ export default function header(){
               </ul>
            </nav>
 
-          { barcolor ? <a className="fixed right-10 bottom-6" href="#"><img src="/img/backtotop.png" alt="Back to Top" width={30} height={30} /></a> : <></>}
+          { barcolor ? <a className="fixed right-10 bottom-6" href="#"><img src="./img/backtotop.png" alt="Back to Top" width={30} height={30} /></a> : <></>}
         </header>
     )
 }
