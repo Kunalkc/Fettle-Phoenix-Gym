@@ -34,12 +34,12 @@ export default function gyms(props){
             <div className="w-auto h-auto bg-black flex flex-col gap-5 items-center justify-center rounded-xl">
                 {props.opengym ? 
                 <Imageslider
-                ID = {1}
+                ID = {4}
                 width = {width1}
                 height = {300}
              />
                 : <Imageslider
-                             ID = {1}
+                             ID = {3}
                              width = {width1}
                              height = {300}
                 />}

@@ -71,7 +71,7 @@ export default function slider(props){
          <img src={currimgurl} className="absolute top-0 left-0 w-full h-full rounded-lg object-cover"/>
         
         <div className="absolute top-0 left-0 w-full h-full rounded-lg overflow-hidden flex flex-row justify-center items-center">
-         <p className= " text-white text-[200%] p-4 bg-black/50  rounded-lg" >{currdesc}</p>
+         <p className= " text-white text-[200%] p-4 bg-black/50  rounded-lg text-center" >{currdesc}</p>
         </div>
 
         <div className="w-auto h-[10%] rounded-lg bg-black flex flex-row justify-around items-center z-10">

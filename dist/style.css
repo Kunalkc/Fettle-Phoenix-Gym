@@ -515,6 +515,9 @@
   .h-2\/3 {
     height: calc(2/3 * 100%);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-\[10\%\] {
     height: 10%;
   }
@@ -978,11 +981,11 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .gap-\[2vw\] {
-    gap: 2vw;
-  }
   .gap-\[4vw\] {
     gap: 4vw;
+  }
+  .gap-\[5vw\] {
+    gap: 5vw;
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -2126,6 +2129,11 @@
       display: block;
     }
   }
+  .md\:h-auto {
+    @media (width >= 48rem) {
+      height: auto;
+    }
+  }
   .md\:w-\[70vw\] {
     @media (width >= 48rem) {
       width: 70vw;
@@ -2144,6 +2152,11 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:gap-\[2vw\] {
+    @media (width >= 48rem) {
+      gap: 2vw;
     }
   }
   .md\:pr-20 {

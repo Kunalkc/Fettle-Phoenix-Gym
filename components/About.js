@@ -26,20 +26,22 @@ export default function About(){
             height = {500}
          />     
                 <h1 className=" text-red-700 text-2xl font-bold italic fade-in">ABOUT</h1>
-                 <p className="text-white text-center w-[70vw] fade-in">Fettle Phoenix Gym in Sundernagar, owned by pro bodybuilder Nirit, is a premier fitness hub designed for those who are serious about strength, endurance, and transformation. Equipped with cutting-edge machines, free weights, and specialized training zones, the gym offers a dynamic space for beginners and professionals alike. With Nirits expertise and personalized coaching, members receive top-tier guidance to achieve peak performance, whether it’s muscle building, fat loss, or overall fitness. At Fettle Phoenix Gym, every workout is a step toward redefining strength and resilience.</p>
+                 <p className="text-white text-center w-[70vw] fade-in">Welcome to Fettle Phoenix Gym – Rise Stronger! <br/>
+
+At Fettle Phoenix Gym, we believe in transformation, resilience, and strength. Just like a phoenix rising from the ashes, we help you push past your limits and become the best version of yourself. Our state-of-the-art facility is equipped with top-tier workout equipment, expert trainers, and a motivating atmosphere to fuel your fitness journey. Whether you're a beginner or a seasoned athlete, we offer personalized training programs, group classes, and nutritional guidance to help you achieve your goals. Join the Fettle Phoenix community today and ignite your passion for fitness!</p>
                 
          
 
          <div className="mt-15 p-15 w-full h-auto px-7 flex flex-col md:flex-row items-center justify-center fade-in bg-black rounded-3xl">
             <Imageslider
-             ID = {1}
+             ID = {2}
              width = {width2}
              height = {300}
            />
 
             <div className=" w-auto h-auto flex flex-col gap-[4vw] items-center justify-center" >
                  <h1 className=" text-red-700 text-2xl font-bold italic fade-in text-center mt-15">ABOUT NIRIT</h1>
-                 <p className="text-white text-center w-auto md:w-[70vw] fade-in p-7">Fettle Phoenix Gym in Sundernagar, owned by pro bodybuilder Nirit, is a premier fitness hub designed for those who are serious about strength, endurance, and transformation. Equipped with cutting-edge machines, free weights, and specialized training zones, the gym offers a dynamic space for beginners and professionals alike. With Nirits expertise and personalized coaching, members receive top-tier guidance to achieve peak performance, whether it’s muscle building, fat loss, or overall fitness. At Fettle Phoenix Gym, every workout is a step toward redefining strength and resilience.</p>
+                 <p className="text-white text-center w-auto md:w-[70vw] fade-in p-7">Nirit Jamwal is a renowned professional bodybuilder from Himachal Pradesh, known for his remarkable achievements in the world of bodybuilding. He is the proud owner of Fettle Phonix Gym, where he trains and inspires countless fitness enthusiasts. Nirit has earned the prestigious title of Mr. Himachal Overall Winner three times, in 2018, 2020, and 2023, marking his dominance in the state-level competitions. His talent and dedication have also earned him international recognition, securing a spot in the Top-10 at Mr. World and Top-10 at Mr. Asia championships, making him one of the most respected athletes in the Indian bodybuilding community.</p>
                 
             </div>
          </div>

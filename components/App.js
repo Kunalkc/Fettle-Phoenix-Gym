@@ -3,6 +3,7 @@ import Header from "./Header"
 import Landing from "./Landing";
 import Gyms from "./Gyms"
 import About from "./About"
+import Supps from "./Supps"
 
 export default function App(){
 
@@ -26,6 +27,7 @@ export default function App(){
                    opengym = {gym}
                    changegym = {changegym}
                 />
+                <Supps/>
                 <div id="MEM" className=" w-full h-screen flex flex-col items-center justify-center gap-5 fade-in">
            
                    <h1 className="mt-15 text-red-700 text-2xl font-bold italic fade-in">MEMBERSHIPS</h1>
@@ -93,8 +95,8 @@ export default function App(){
                  </div>
                  <div className="flex flex-col gap-1 items-center justify-center">
                       <h2 className="text-red-500 italic text-center" >Contact details</h2>
-                      <a className="text-white" href="mailto:example@email.com">example@email.com</a>
-                      <a  className="text-white" href="tel:+911234567890">+91 12345 67890</a>
+                      <a className="text-white" href="mailto:example@email.com">fettlephoenixgym@gmail.com</a>
+                      <a  className="text-white" href="tel:+919459100133">+91 94591 00133</a>
                  </div>
                 </div>
             </main>

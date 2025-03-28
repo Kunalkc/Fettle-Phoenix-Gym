@@ -24,11 +24,11 @@ export default function header(){
     
 
     return(
-        <header className={`z-1000 fixed w-full top-0 left-0 flex flex-row justify-center md:justify-between items-center rounded-b-md transition duration-300 ${barcolor ? "bg-[#1f1b1b]" : "bg-transparent"}`}>
+        <header className={`z-1000 fixed w-full h-15 md:h-auto top-0 left-0 flex flex-row justify-center md:justify-between items-center rounded-b-md transition duration-300 ${barcolor ? "bg-[#1f1b1b]" : "bg-transparent"}`}>
            <img className="hidden md:block pl-0 md:pl-10 pt-3" src="/img/logo.png" width={150} height={150}></img>
 
            <nav>
-              <ul className=" pr-0 md:pr-20 flex flex-row flex-nowrap gap-[2vw] text-white text-md md:text-lg italic">
+              <ul className=" pr-0 md:pr-20 flex flex-row flex-nowrap gap-[5vw] md:gap-[2vw] text-white text-md md:text-lg italic">
                 <li><a className="hover:underline" href="#ABOUT">ABOUT</a></li>
                 <li><a className="hover:underline" href="#GYMS">GYMS</a></li>
                 <li><a className="hover:underline" href="#MEM">MEMBERSHIPS</a></li>
