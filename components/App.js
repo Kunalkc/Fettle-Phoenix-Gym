@@ -79,7 +79,7 @@ export default function App(){
 
                  <div className="flex flex-col gap-1 items-center justify-center">
                       <h2 className="text-red-500 italic text-center">Fettle Phoenix Gym 1</h2>
-                      <address className="text-white text-center">Pungh, near Amit Emporium, Sundar Nagar,<br/> Mandi, Himachal Pradesh<br/> 175018</address>
+                      <address className="text-white text-center"> near indoor sports stadium, Pungh, Sundar Nagar,<br/> Mandi, Himachal Pradesh<br/> 175018</address>
                       <div className="flex flex-row items-center justify-center gap-3">
                       <a  href="https://maps.app.goo.gl/rbDCkWGKr8FbvwDw6"><img src="./img/googlemaps.png" width={30} height={30}/></a>
                       <a  href="https://www.instagram.com/fettlephoenixgym/?hl=en"><img src="./img/instagram.png" width={30} height={30}/></a>
