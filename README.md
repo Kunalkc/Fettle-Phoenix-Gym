@@ -1,4 +1,3 @@
-````md
 # Fettle Phoenix Gym
 
 A modern, responsive gym and fitness website designed to provide users with an engaging online experience while showcasing gym facilities, services, trainers, membership plans, and contact information.
@@ -21,11 +20,6 @@ A modern, responsive gym and fitness website designed to provide users with an e
   <img src="./ss/mobile3.png" alt="Theme Menu" width="200px">
   <img src="./ss/mobile3.png" alt="Theme Menu" width="200px">
 </div>
-![Trainers](ss/mobile1.png)
-
-![Membership Plans](ss/mobile2.png)
-
-![Contact](ss/mobile3.png)
 
 ---
 
